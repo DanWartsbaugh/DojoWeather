@@ -22,7 +22,7 @@
 }
 
 /*left side of nav-bar containing page title*/
-.nav-left {
+h1 {
     font-size: xx-large;
     font-weight: bold;
     color: white;
@@ -71,6 +71,13 @@
     font-weight: bold;
 }
 
+/*right side of control bar, containing temperature selector*/
+.cb-right {
+    display:flex;
+    align-items:center;
+}
+
+/*selector drop-down*/
 #f-or-c {
     padding: 5px 1px;
 }
@@ -107,7 +114,7 @@
 }
 
 /*description of the weather*/
-.desc {}
+/* .desc {} */
 
 /*box containing high and low temps*/
 .temps {
@@ -177,5 +184,4 @@
     border-color: black;
     box-shadow: 2px 2px black;
     font-weight: bold;
-    /* justify-self:center; */
 }
