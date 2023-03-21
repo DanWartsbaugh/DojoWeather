@@ -160,7 +160,8 @@ h1 {
 
 .cookie-text {
     width: 800px;
-    justify-self: flex-start;
+    margin-left:50px;
+    /* justify-self: flex-start; */
 }
 
 /* cookie-text heading */

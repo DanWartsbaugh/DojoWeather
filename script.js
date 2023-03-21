@@ -23,6 +23,4 @@ function convert(element){
         if(element.value=="cel")
         item.innerText = Math.round((item.innerText-32)*.5556)
     })
-        
-    
 }

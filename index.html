@@ -31,8 +31,11 @@
     <div class="main">
         <!-- Control bar. Contains the city being displayed on the left and a dropdown selector to change between celsius and fahrenheit on the right. -->
         <div class="control-bar">
-            <div class="cb-left"><p>San Jose</p></div>
-            <div class="cb-right"><p>show temperature in</p>
+            <div class="cb-left">
+                <h3>San Jose</h3>
+            </div>
+            <div class="cb-right">
+                <p>show temperature in</p>
                 <select onchange="convert(this)" name="scale" id="f-or-c">
                     <option value="cel">°C</option>
                     <option value="fahr">°F</option>
@@ -45,49 +48,65 @@ Boxes display from top to bottom: Day, image, description of the weather, and a 
         <div class="display">
             <!-- Day 1 -->
             <div class="box">
-                <p class="day">Today</p>
+                <h4 class="day">Today</h4>
                 <img src="assets/some_rain.png" alt="some rain">
                 <p class="desc">some rain</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high"><p class="tempNum">24</p>°</div>
-                    <div class="low"><p class="tempNum">18</p>°</div>
+                    <div class="high">
+                        <p class="tempNum">24</p>°
+                    </div>
+                    <div class="low">
+                        <p class="tempNum">18</p>°
+                    </div>
                 </div>
             </div>
 
             <!-- Day 2 -->
             <div class="box">
-                <p class="day">Tomorrow</p>
+                <h4 class="day">Tomorrow</h4>
                 <img src="assets/some_sun.png" alt="some sun">
                 <p class="desc">some sun</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high"><p class="tempNum">27</p>°</div>
-                    <div class="low"><p class="tempNum">19</p>°</div>
+                    <div class="high">
+                        <p class="tempNum">27</p>°
+                    </div>
+                    <div class="low">
+                        <p class="tempNum">19</p>°
+                    </div>
                 </div>
             </div>
 
             <!-- Day 3 -->
             <div class="box">
-                <p class="day">Friday</p>
+                <h4 class="day">Friday</h4>
                 <img src="assets/some_clouds.png" alt="some clouds">
                 <p class="desc">some clouds</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high"><p class="tempNum">21</p>°</div>
-                    <div class="low"><p class="tempNum">16</p>°</div>
+                    <div class="high">
+                        <p class="tempNum">21</p>°
+                    </div>
+                    <div class="low">
+                        <p class="tempNum">16</p>°
+                    </div>
                 </div>
             </div>
 
             <!-- Day 4 -->
             <div class="box">
-                <p class="day">Saturday</p>
+                <h4 class="day">Saturday</h4>
                 <img src="assets/some_sun.png" alt="some sun">
                 <p class="desc">some sun</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high"><p class="tempNum">26</p>°</div>
-                    <div class="low"><p class="tempNum">21</p>°</div>
+                    <div class="high">
+                        <p class="tempNum">26</p>°
+                    </div>
+                    <div class="low">
+                        <p class="tempNum">21</p>°
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,8 +117,9 @@ Bar will be fixed to the bottom of the screen. Will disappear when accepted.-->
             <img src="assets/cookie.png" alt="cookie icon">
             <div class="cookie-text">
                 <p class="cookie-head">Stop! Cookie time</p>
-                <p class="message">We use cookies (sadly not the edible kind) to personalize
-                    content and ads, to provide social media features and to analyse our traffic.
+                <p class="message">We use cookies (sadly not the edible kind) to personalize <br>
+                    content and ads, to provide social media features and to <br>
+                    analyse our traffic.
                     <a href="#">Read more...</a>
                 </p>
             </div>
