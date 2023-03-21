@@ -1,175 +1,179 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Top bar that contains the centered nav-bar*/
-.top-bar{
-    background-color:rgb(159,197,248);
-    display:flex;
-    justify-content:center;
+.top-bar {
+    background-color: rgb(159, 197, 248);
+    display: flex;
+    justify-content: center;
 }
 
-    /*nav bar that contains title and cities*/
-    .nav-bar{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        width:1000px;
-        height:100px;
-        padding:5px 0px;
-    }
+/*nav bar that contains title and cities*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    padding: 5px 0px;
+}
 
-    /*left side of nav-bar containing page title*/
-    .nav-left{
-        font-size:xx-large;
-        font-weight:bold;
-        color:white;
-        display:flex;
-        align-items:center;
-    }
+/*left side of nav-bar containing page title*/
+.nav-left {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
 
-    /*right side of nav-bar containing cities*/
-    .nav-right{
-        width:400px;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-    }
-        /*city names*/
-    .city{
-        margin-right:20px;
-        border-style:none;
-        background-color:rgb(159,197,248);
-        color:white;
-        font-size:x-large;
-    }
+/*right side of nav-bar containing cities*/
+.nav-right {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*city names*/
+.city {
+    margin-right: 20px;
+    border-style: none;
+    background-color: rgb(159, 197, 248);
+    color: white;
+    font-size: x-large;
+}
 
 /*Main area of content containing control bar, display, and cookie bar*/
-.main{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-    /*Control bar containing city displayed and temp dropdown*/
-    .control-bar{
-        width:1000px;
-        border-bottom-style:solid;
-        border-bottom-color:black;
-        display:flex;
-        justify-content:space-between;
-        padding-top:20px;
-        padding-bottom:15px;
-    }
 
-    /*City name (control bar left)*/
-    .cb-left{
-        font-size:x-large;
-        font-weight:bold;
-    }
+/*Control bar containing city displayed and temp dropdown*/
+.control-bar {
+    width: 1000px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
 
-    #f-or-c{
-        padding:5px 1px;
-    }
+/*City name (control bar left)*/
+.cb-left {
+    font-size: x-large;
+    font-weight: bold;
+}
 
-    /*Display area that shows the weather for each day*/
-    .display{
-        width:1000px;
-        margin-top:20px;
-        display:flex;
-        justify-content:space-between;
-    }
+#f-or-c {
+    padding: 5px 1px;
+}
 
-        /*box that shows the day's weather*/
-        .box{
-            width:235px;
-            height:400px;
-            background-color:rgb(238,238,238);
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:space-evenly;
-        }
+/*Display area that shows the weather for each day*/
+.display {
+    width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
-        /*day displayed at top of box*/
-        .day{
-            font-size:x-large;
-            font-weight:bold;
-        }
+/*box that shows the day's weather*/
+.box {
+    width: 235px;
+    height: 400px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-        /*image depicting the weather*/
-        .box>img{
-            border-radius:50%;
-        }
+/*day displayed at top of box*/
+.day {
+    font-size: x-large;
+    font-weight: bold;
+}
 
-        /*description of the weather*/
-        .desc{}
+/*image depicting the weather*/
+.box>img {
+    border-radius: 50%;
+    height:150px;
+}
 
-        /*box containing high and low temps*/
-        .temps{
-            width:200px;
-            display:flex;
-            justify-content:space-around;
-            font-size:x-large;
-            font-weight:bold;
-        }
+/*description of the weather*/
+.desc {}
 
-        /*high temperature*/
-        .high{
-            font-size: x-large;
-            color:rgb(207,42,39);
-        }
+/*box containing high and low temps*/
+.temps {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    font-weight: bold;
+}
 
-        /*low temperature*/
-        .low{
-            font-size:x-large;
-            color:rgb(43,120,228);
-        }
+/*high temperature*/
+.high {
+    font-size: x-large;
+    color: rgb(207, 42, 39);
+}
 
-    /*cookie bar containing left to right an image, some text, and an accept button*/
-    .cookie-bar{
-        width:1000px;
-        height:100px;
-        border-style:solid;
-        border-color:black;
-        background-color:rgb(238,238,238);
-        display:flex;
-        align-items:center;
-        position:fixed;
-        bottom:0;
-    }
+/*low temperature*/
+.low {
+    font-size: x-large;
+    color: rgb(43, 120, 228);
+}
 
-    /* cookie icon */
-    .cookie-bar>img{
-        width:80px;
-        padding:0px 20px;
-    }
+/*cookie bar containing left to right an image, some text, and an accept button*/
+.cookie-bar {
+    width: 1000px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
 
-    .cookie-text{
-        width:800px;
-        justify-self:flex-start;
-    }
-    /* cookie-text heading */
-    .cookie-head{
-        font-size:large;
-        font-weight:bold;
-    }
+/* cookie icon */
+.cookie-bar>img {
+    width: 80px;
+    padding: 0px 20px;
+}
 
-    /* cookie-text message */
-    .message{
-        width:700px;
-    }
+.cookie-text {
+    width: 800px;
+    justify-self: flex-start;
+}
 
-    /*cookie accept button*/
-    .cookie-button{
-        width:100px;
-        margin:0px 40px;
-        padding:3px 0px;
-        background-color:rgb(159,197,248);
-        border-style:solid;
-        border-color:black;
-        box-shadow:2px 2px black;
-        font-weight:bold;
-        /* justify-self:center; */
-    }
+/* cookie-text heading */
+.cookie-head {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* cookie-text message */
+.message {
+    width: 700px;
+}
+
+/*cookie accept button*/
+.cookie-button {
+    width: 100px;
+    margin: 0px 40px;
+    padding: 3px 0px;
+    background-color: rgb(159, 197, 248);
+    border-style: solid;
+    border-color: black;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+    /* justify-self:center; */
+}
