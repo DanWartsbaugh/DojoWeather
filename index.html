@@ -33,7 +33,7 @@
         <div class="control-bar">
             <div class="cb-left">San Jose</div>
             <div class="cb-right">show temperature in
-                <select onchange="changeScale(this)" name="scale" id="f-or-c">
+                <select onchange="convert(this)" name="scale" id="f-or-c">
                     <option value="cel">°C</option>
                     <option value="fahr">°F</option>
                 </select>
@@ -50,8 +50,8 @@ Boxes display from top to bottom: Day, image, description of the weather, and a 
                 <p class="desc">some rain</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high" id="h1">24°</div>
-                    <div class="low" id="l1">18°</div>
+                    <div class="high"><p class="tempNum">24</p>°</div>
+                    <div class="low"><p class="tempNum">18</p>°</div>
                 </div>
             </div>
 
@@ -62,8 +62,8 @@ Boxes display from top to bottom: Day, image, description of the weather, and a 
                 <p class="desc">some sun</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high" id="h2">27°</div>
-                    <div class="low" id="l2">19°</div>
+                    <div class="high"><p class="tempNum">27</p>°</div>
+                    <div class="low"><p class="tempNum">19</p>°</div>
                 </div>
             </div>
 
@@ -74,8 +74,8 @@ Boxes display from top to bottom: Day, image, description of the weather, and a 
                 <p class="desc">some clouds</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high" id="h3">21°</div>
-                    <div class="low" id="l3">16°</div>
+                    <div class="high"><p class="tempNum">21</p>°</div>
+                    <div class="low"><p class="tempNum">16</p>°</div>
                 </div>
             </div>
 
@@ -86,8 +86,8 @@ Boxes display from top to bottom: Day, image, description of the weather, and a 
                 <p class="desc">some sun</p>
                 <!-- high temperature in a div on the left, low in a div on the right -->
                 <div class="temps">
-                    <div class="high" id="h4">26°</div>
-                    <div class="low" id="l4">21°</div>
+                    <div class="high"><p class="tempNum">26</p>°</div>
+                    <div class="low"><p class="tempNum">21</p>°</div>
                 </div>
             </div>
         </div>

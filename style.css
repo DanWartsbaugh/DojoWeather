@@ -120,12 +120,14 @@
 
 /*high temperature*/
 .high {
+    display:flex;
     font-size: x-large;
     color: rgb(207, 42, 39);
 }
 
 /*low temperature*/
 .low {
+    display:flex;
     font-size: x-large;
     color: rgb(43, 120, 228);
 }
