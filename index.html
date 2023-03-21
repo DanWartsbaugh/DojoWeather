@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <!-- top-bar stretches full width. Contains a centered div of content that includes the title (Dojoweather) in a div on the left and three clickable cities in a div on the right. -->
+    <div class="top-bar">
+        <div class="nav-bar">
+            <!-- nav-left contains the page title -->
+            <div class="nav-left">
+                <p class="nav-title">DojoWeather</p>
+            </div>
+
+            <!-- nav-right contains three clickable cities -->
+            <div class="nav-right">
+                <button class="city" onclick="loading()">Burbank</button>
+                <button class="city" onclick="loading()">Chicago</button>
+                <button class="city" onclick="loading()">Dallas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main area of content containing a control bar, display, and cookie bar centered on page. -->
+    <div class="main">
+        <!-- Control bar. Contains the city being displayed on the left and a dropdown selector to change between celsius and fahrenheit on the right. -->
+        <div class="control-bar">
+            <div class="cb-left">San Jose</div>
+            <div class="cb-right">show temperature in
+                <select onchange="changeScale(this)" name="scale" id="f-or-c">
+                    <option value="cel">°C</option>
+                    <option value="fahr">°F</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Display. Shows four boxes side-by-side that display the weather. 
+Boxes display from top to bottom: Day, image, description of the weather, and a box containing high and low temp on the left and right respectively. -->
+        <div class="display">
+            <!-- Day 1 -->
+            <div class="box">
+                <p class="day">Today</p>
+                <img src="assets/some_rain.png" alt="some rain" height="150">
+                <p class="desc">some rain</p>
+                <!-- high temperature in a div on the left, low in a div on the right -->
+                <div class="temps">
+                    <div class="high" id="h1">24°</div>
+                    <div class="low" id="l1">18°</div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="box">
+                <p class="day">Tomorrow</p>
+                <img src="assets/some_sun.png" alt="some sun" height="150">
+                <p class="desc">some sun</p>
+                <!-- high temperature in a div on the left, low in a div on the right -->
+                <div class="temps">
+                    <div class="high" id="h2">27°</div>
+                    <div class="low"id="l2">19°</div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="box">
+                <p class="day">Friday</p>
+                <img src="assets/some_clouds.png" alt="some clouds" height="150">
+                <p class="desc">some clouds</p>
+                <!-- high temperature in a div on the left, low in a div on the right -->
+                <div class="temps">
+                    <div class="high" id="h3">21°</div>
+                    <div class="low" id="l3">16°</div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="box">
+                <p class="day">Saturday</p>
+                <img src="assets/some_sun.png" alt="some sun" height="150">
+                <p class="desc">some sun</p>
+                <!-- high temperature in a div on the left, low in a div on the right -->
+                <div class="temps">
+                    <div class="high" id="h4">26°</div>
+                    <div class="low" id="l4">21°</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookie bar. Contains left to right a cookie image, text describing the cookie policy with a "Read more" link, and a button labeled "I accept." 
+Bar will be fixed to the bottom of the screen. Will disappear when accepted.-->
+        <div class="cookie-bar">
+            <img src="assets/cookie.png" alt="cookie icon">
+            <div class="cookie-text">
+                <p class="cookie-head">Stop! Cookie time</p>
+                <p class="message">We use cookies (sadly not the edible kind) to personalize
+                    content and ads, to provide social media features and to analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button class="cookie-button" onclick="hide()">I accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
